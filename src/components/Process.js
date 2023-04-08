@@ -38,10 +38,10 @@ const Process = () => {
 
     return (
         <div className="flex flex-col items-center justify-center pt-24">
-            <div className=' flex flex-row justify-between items-center mb-24'>
-                <div className='w-[25vw]  h-[500px] mr-[12.5vw]'>
-                    <img src="https://images.adsttc.com/media/images/5b69/e826/f197/cc60/7f00/0185/newsletter/Andy_Ryan.jpg?1533667359" className="rounded-2xl absolute w-[20vw] h-[500px]" />
-                    <div className='relative top-48 py-10 rounded-2xl right-20 bg-white flex flex-col   w-[250px] justify-center items-center text-center'>
+            <div className=' flex lg:flex-row md:flex-row flex-col border justify-between items-center mb-24'>
+                <div className='lg:w-[25vw] md:max-w-[300px] w-[90vw] border  h-[500px] lg:mr-[12.5vw] md:mr-[12vw] mr-0'>
+                    <img src="https://images.adsttc.com/media/images/5b69/e826/f197/cc60/7f00/0185/newsletter/Andy_Ryan.jpg?1533667359" className="rounded-2xl absolute lg:w-[20vw] md:max-w-[300px] w-[90vw] lg:h-[500px] md:h-[400px] h-[500px]" />
+                    <div className='relative top-48 py-10 rounded-2xl lg:right-20 mb:right-16 right-0 bg-white flex flex-col   w-[250px] justify-center items-center text-center'>
                         <OfflineBoltIcon style={{
                             color: 'green', fontSize: '40px'
                         }} />
@@ -50,7 +50,7 @@ const Process = () => {
                         <button className='bg-blue-500 mt-6 hover:border hover:border-blue-700 hover:text-blue-500 hover:bg-white text-white w-contain py-1 px-3 rounded-2xl'>Purchase</button>
                     </div>
                 </div>
-                <div className='max-w-[350px] px-6 py-6 flex flex-col justify-center'>
+                <div className='border lg:max-w-[350px] md:max-w-[300px] px-6 py-6 flex flex-col justify-center'>
                     <p className='text-3xl font-bold text-black mb-6'>Simple Process to Follow in Minutes</p>
                     <p className='font-normal text-[12px] mb-4'>A simple and easy way to listing your properties by just in minutes your properties will be seen globally in our platform.</p>
                     <div className='flex flex-col gap-4'>
@@ -72,14 +72,14 @@ const Process = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row justify-between items-center'>
-                <div className='flex flex-col w-[25vw] mr-[12.5vw] pl-3 pt-3'>
-                    <p className="text-2xl font-bold text-slate-800 mb-3">Several Reasons <br /> why People use <span>Tobbie<span>|</span>Properties</span></p>
+            <div className='flex lg:flex-row md:flex-row flex-col justify-between items-center border'>
+                <div className='flex flex-col lg:w-[25vw] md:max-w-[300px] mr-[12.5vw] pl-3 pt-3'>
+                    <p className="lg:text-2xl md:text-xl text-[22px] font-bold text-slate-800 mb-3">Several Reasons <br /> why People use <span>Tobbie<span>|</span>Properties</span></p>
                     <p className='text-[12px] mb-6 text-slate-500'>Our platform, Tobbie|Properties is different from other platform and there are several reasons why we are special.</p>
                     <div className=''>
                         <Fragment>
                             <Accordion open={open === 1} icon={<Icon id={1} open={open} />} className={`flex px-6 py-2 flex-col justify-between ${open === 1 ? 'border rounded-2xl' : ''}`}>
-                                <AccordionHeader onClick={() => handleOpen(1)} className='text-[17px] font-bold text-slate-800'>
+                                <AccordionHeader onClick={() => handleOpen(1)} className='lg:text-[17px] md:text-[15px] text-[15px] font-bold text-slate-800'>
                                     What is Material Tailwind?
                                 </AccordionHeader>
                                 <AccordionBody className="text-[13px]">
@@ -90,7 +90,7 @@ const Process = () => {
                                 </AccordionBody>
                             </Accordion>
                             <Accordion open={open === 2} icon={<Icon id={2} open={open} />} className={`flex px-6 py-2 flex-col justify-between ${open === 2 ? 'border rounded-2xl' : ''}`}>
-                                <AccordionHeader onClick={() => handleOpen(2)} className='text-[17px] font-bold text-slate-800'>
+                                <AccordionHeader onClick={() => handleOpen(2)} className='lg:text-[17px] md:text-[15px] text-[15px] font-bold text-slate-800'>
                                     How to use Material Tailwind?
                                 </AccordionHeader>
                                 <AccordionBody className="text-[13px]">
@@ -101,7 +101,7 @@ const Process = () => {
                                 </AccordionBody>
                             </Accordion>
                             <Accordion open={open === 3} icon={<Icon id={3} open={open} />} className={`flex px-6 py-2 flex-col justify-between ${open === 3 ? 'border rounded-2xl' : ''}`}>
-                                <AccordionHeader onClick={() => handleOpen(3)} className='text-[17px] font-bold text-slate-800'>
+                                <AccordionHeader onClick={() => handleOpen(3)} className='lg:text-[17px] md:text-[15px] text-[15px] font-bold text-slate-800'>
                                     What can I do with Material Tailwind?
                                 </AccordionHeader>
                                 <AccordionBody className="text-[13px]">
@@ -115,9 +115,9 @@ const Process = () => {
                     </div>
                     <button className='mt-4 py-1 px-1 border hover:bg-black hover:text-white w-[130px] rounded-2xl'>Learn More</button>
                 </div>
-                <div className='w-[25vw] h-[500px] '>
-                    <img src="https://matison.se/wp-content/uploads/2020/05/Matison-market-balcony-glazing-series-630-1920x1280px-5.jpg" className='rounded-2xl absolute w-[20vw] h-[500px]' />
-                    <div className='relative top-48 py-10 rounded-2xl right-20 bg-white flex flex-col  border w-[250px] justify-center items-center text-center'>
+                <div className='border lg:mt-0 md:mt-0 mt-8 lg:w-[25vw] md:w-[30vw] w-[90vw] h-[500px] '>
+                    <img src="https://matison.se/wp-content/uploads/2020/05/Matison-market-balcony-glazing-series-630-1920x1280px-5.jpg" className='rounded-2xl absolute lg:w-[20vw] md:max-w-[300px] w-[90vw] h-[500px] md:h-[450px] lg:h-[500px]' />
+                    <div className='relative top-48 py-16 rounded-2xl lg:right-20 md:right-20 right-4 bg-white flex flex-col  border w-[250px] justify-center items-center text-center'>
                         <p className='font-bold text-slate-800 text-xl mb-2'>Minimal Apart</p>
                         <div className='flex flex-row mb-4'>
                             <StarRateIcon style={{ color: 'gold', fontSize: '16px' }} />

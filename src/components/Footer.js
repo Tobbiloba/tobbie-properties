@@ -1,15 +1,15 @@
 const Footer = () => {
     return (
         <div className="flex justify-center items-center py-16">
-            <div className="w-[75vw] flex flex-row justify-between items-center">
+            <div className="w-[75vw] flex lg:flex-row md:flex-row flex-col lg:justify-between md:justify-between justify-start lg:items-center md:items-center items-start">
                 <div className="flex flex-col gap-3">
                     <p className="text-[20px] font-bold text-slate-800">Tobbie<span className="text-2xl text-slate-500">|</span>Properties</p>
                     <p className="text-[13px]">tobbieproperties@gmail.com</p>
                     <p className="text-[13px]">+234192974385</p>
                     <p className="text-[13px]">No 3, Itaoluwo, Ikeja, Lagos State.</p>
                 </div>
-                <div className="flex flex-row">
-                    <div className="gap-3 flex flex-col ml-12">
+                <div className="flex flex-row lg:mt-0 md:mt-0 mt-16">
+                    <div className="gap-3 flex flex-col">
                         <p className="text-[16px] font-bold">Summary</p>
                         <p className="text-[13px]">Properties</p>
                         <p className="text-[13px]">Listings</p>

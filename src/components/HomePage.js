@@ -6,9 +6,9 @@ const HomePage = () => {
                 <img src="https://previews.123rf.com/images/aomarch/aomarch1603/aomarch160300051/59313601-3d-building-wireframe.jpg" className="w-[100vw] h-[90vh]" />
 
             </div>
-            <div className="w-[25vw] min-h-[90vh] right-0 absolute rounded-bl-2xl backdrop-blur-sm bg-black/30 flex flex-col items-center justify-center py-6">
+            <div className="lg:w-[25vw] md:w-[350px] w-[300px] min-h-[90vh] right-0 absolute rounded-bl-2xl backdrop-blur-sm lg:bg-black/30 md:bg-black/30 bg-white/30 flex flex-col items-center justify-center py-6">
                 <div className="absolute top-[4vh]">
-                    <button className='bg-transparent lg:mr-5 md:mr-3 mr-0 mb-3 lg:mb-0 md:mb-0'>SignUp</button>
+                    <button className='bg-transparent lg:mr-5 md:mr-3 mr-4 mb-3 lg:mb-0 md:mb-0'>SignUp</button>
                     <button className='bg-slate-800 px-5 rounded-2xl py-1 text-white'>SignIn</button>
                 </div>
                 <div className="flex flex-col gap-6">
